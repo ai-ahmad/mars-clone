@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
-const Login = ({ onLoginSuccess }) => {
+const Login = () => {
     const [name, setName] = useState('');
     const [password, setPassword] = useState('');
     const [message, setMessage] = useState('');
@@ -23,12 +23,11 @@ const Login = ({ onLoginSuccess }) => {
         try {
             const usersResponse = await axios.get('http://localhost:5001/students');
             const users = usersResponse.data;
-
+            console.log(users);
             const user = users.find(v => v.name === trimmedName && v.password === trimmedPassword);
             if (user) {
                 localStorage.setItem('loggedInUser', JSON.stringify(user));
-                onLoginSuccess(user);
-                navigate('/');
+                navigate('/main'    );
                 return;
             }
 
