@@ -55,7 +55,7 @@ const Post = () => {
     setImage(null);
     setImageUrl(''); // Ensure this is reset
     setModalOpen(false);
-    navigate('/');
+    navigate('/main');
   };
 
   const handleFileChange = (e) => {

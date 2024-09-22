@@ -57,9 +57,9 @@ const Header = ({ setLoggedInUser }) => {
 
             {/* Right Side (Button and Profile) */}
             <div className="flex items-center space-x-4">
-                <button className="from-white border-2 border-orange-[#0F0D5d] text-[#0F0D5D] 0 px-6 py-[6px] rounded-lg shadow hover:shadow-lg transition duration-300 font-semibold flex items-center">
+                <Link to="/create" className="from-white border-2 border-orange-[#0F0D5d] text-[#0F0D5D] 0 px-6 py-[6px] rounded-lg shadow hover:shadow-lg transition duration-300 font-semibold flex items-center">
                     <FaPlus className="mr-2" /> Post Yaratish
-                </button>
+                </Link>
 
                 {/* User Profile */}
                 {!loggedInUser ? (

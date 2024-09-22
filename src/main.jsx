@@ -12,6 +12,7 @@ import Upladeimg from "./components/Upload";
 import News from "./components/News";
 import Post from "./components/Post";
 import BlogsPages from "./components/BlogsPages";
+import Task from "./components/Task";
 
 const router = createBrowserRouter([
   {
@@ -43,6 +44,14 @@ const router = createBrowserRouter([
   {
     path: "/blogs",
     element: <BlogsPages/>,
+  },
+  {
+    path: "/create",
+    element: <Post/>,
+  },
+  {
+    path: "/task",
+    element: <Task/>,
   }
 ]);
 
