@@ -13,10 +13,15 @@ import News from "./components/News";
 import Post from "./components/Post";
 import BlogsPages from "./components/BlogsPages";
 import Task from "./components/Task";
+import Learning from "./components/Learn";
 
 const router = createBrowserRouter([
   {
     path: "/login",
+    element: <Login/>,
+  },
+  {
+    path: "/",
     element: <Login/>,
   },
   {
@@ -52,7 +57,12 @@ const router = createBrowserRouter([
   {
     path: "/task",
     element: <Task/>,
+  },
+  {
+    path: "/details",
+    element: <Learning/>,
   }
+
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
