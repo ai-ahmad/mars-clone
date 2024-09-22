@@ -98,23 +98,23 @@ const Users = () => {
                 <div className="bg-gradient-to-r from-orange-500 to-orange-300 p-6 rounded-lg text-center shadow-md mt-6">
                     <h4 className="font-bold text-white text-xl mb-4">O'yinlar bilan o'rganing</h4>
                     <div className="flex flex-col gap-6">
-                        <Link to='/TypeGame' className="flex flex-col items-center">
+                        <a href='https://typing-test-sable.vercel.app/' className="flex flex-col items-center">
                             <img
                                 className='w-[160px] h-[150px] rounded-2xl transition-transform duration-300 hover:scale-105'
                                 src="https://play-lh.googleusercontent.com/vqcumNluBRJ95zplaIUkBcOAyCSzu3_HsPcT_viEc33pjOWZLnxH_QVOywoSdojcXg"
                                 alt="Typing Game"
                             />
                             <p className='text-center text-2xl font-bold text-white mt-2'>Typing Game</p>
-                        </Link>
+                        </a>
                         <hr />
-                        <Link to='/QuestionGame' className="flex flex-col items-center">
+                        <a href='https://siennameow.github.io/Code-Quiz/' className="flex flex-col items-center">
                             <img
                                 className='w-[160px] h-[150px] rounded-2xl transition-transform duration-300 hover:scale-105'
                                 src="https://exec.mit.edu/file-asset/QUE_stock_image?v=1"
                                 alt="Question Game"
                             />
                             <p className='text-center text-2xl font-bold text-white mt-2'>Question Game</p>
-                        </Link>
+                        </a>
                         <hr />
                         <a target='blank' href="https://coins-ts-git-final-version-ai-ahmads-projects.vercel.app/" className='flex flex-col items-center'>
                             <img
